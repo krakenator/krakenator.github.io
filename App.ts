@@ -6,11 +6,12 @@ module Game {
             this.game = new Phaser.Game(1000, 545, Phaser.AUTO, 'content', {
                 create: this.create
             });
- 
+
         }
 
         create() {
             this.game.state.add("HelpState", Krakenator.HelpState, false);
+            this.game.state.add("GameOver", Krakenator.GameOver, false);
             this.game.state.add("SaveState", Krakenator.SaveState, false);
             this.game.state.add("MainState", Krakenator.MainState, false);
             this.game.state.add("TitleScreenState", Krakenator.TitleScreenState, false);

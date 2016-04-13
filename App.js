@@ -8,6 +8,7 @@ var Game;
         }
         DebugginGame.prototype.create = function () {
             this.game.state.add("HelpState", Krakenator.HelpState, false);
+            this.game.state.add("GameOver", Krakenator.GameOver, false);
             this.game.state.add("SaveState", Krakenator.SaveState, false);
             this.game.state.add("MainState", Krakenator.MainState, false);
             this.game.state.add("TitleScreenState", Krakenator.TitleScreenState, false);
