@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "files": [
+        "App.ts",
+        "gameobjects/enemy.ts",
+        "gameobjects/player.ts",
+        "phaser.d.ts",
+        "pixi.d.ts",
+        "scene/GameSceneGholi.ts",
+        "states/GameOver.ts",
+        "states/GameState.ts",
+        "states/HelpState.ts",
+        "states/MainState.ts",
+        "states/SaveState.ts",
+        "states/TitleScreenState.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
