@@ -15,7 +15,7 @@ var Krakenator;
         };
         SaveState.prototype.create = function () {
             this.bg = this.add.sprite(0, 0, "bg3");
-            var style = { font: "45px Arial", fill: "#ff0000", align: "center" };
+            var style = { font: "45px Arial", fill: "#fff", align: "center" };
             this.textValue = this.game.add.text(300, 300, "Level " + this.level + " finished.", style);
             this.updateCount = 0;
             this.game.time.events.add(Phaser.Timer.SECOND * 1, this.timeout, this);
